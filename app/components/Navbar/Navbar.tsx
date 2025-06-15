@@ -10,21 +10,21 @@ const Navbar = () => {
         <h1 className='text-2xl font-semibold '> BugVaults</h1>
       </div>
       <div className='flex '>
-        <ul className='flex gap-7 text-gray-300'>
-            <li>
+        <ul className='flex gap-5 text-gray-300'>
+            <li className='hover:bg-gray-400/10 p-2 rounded-full'>
                 Features
             </li>
-            <li>
+            <li className='hover:bg-gray-400/10 p-2 rounded-full'>
                 How its work
             </li>
-            <li>
+            <li className='hover:bg-gray-400/10 p-2 rounded-full'>
                 Pricing 
             </li>
         </ul>
       </div>
       <div className='flex gap-5 '>
-        <button className='p-2 bg-neutral-100 cursor-pointer rounded-lg'> Sign in</button>
-        <button  className='p-2 bg-neutral-700 text-white cursor-pointer rounded-lg'> Get started</button>
+        <button className='p-2 px-4 bg-neutral-200 cursor-pointer rounded-lg'> Sign in</button>
+        <button  className='p-2 px-4 bg-neutral-800 text-white cursor-pointer rounded-lg'> Get started</button>
       </div>
       
     </div>
