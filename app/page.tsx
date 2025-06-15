@@ -14,7 +14,7 @@ export default function Home() {
       <div
         className="fixed inset-0 z-0 ]"
         style={{
-          backgroundImage: `radial-gradient(circle 500px at 50% 300px, rgba(16,185,129,0.35), transparent)`,
+          backgroundImage: `radial-gradient(circle 500px at 50% 300px, rgba(150,185,30,0.35), transparent)`,
         }}
       />
       <Navbar/>
@@ -47,7 +47,7 @@ export default function Home() {
           </Badge>
         </div>
         <div className="pl-20 mt-10 flex gap-5">
-          <button className="p-3 rounded-lg flex  items-center gap-5 px-15 bg-neutral-200 text-black cursor-pointer" onClick={()=> router.push("/trackingpage")}>
+          <button className="p-3 rounded-lg flex  items-center gap-5 px-15 bg-yellow-500 text-black cursor-pointer" onClick={()=> router.push("/trackingpage")}>
             Start your Vault {<FaArrowRightLong size={10} />}
           </button>
           <button className="p-3 rounded-lg flex  items-center gap-4 px-10 bg-black text-white border border-gray-700 cursor-pointer">

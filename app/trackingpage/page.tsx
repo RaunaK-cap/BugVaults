@@ -5,8 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { FaFireAlt } from "react-icons/fa";
 import { CopyBlock } from 'react-code-blocks';
 import { Input } from "@/components/ui/input"
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { AiOutlineThunderbolt } from "react-icons/ai";
 
 const page = () => {
 
@@ -21,12 +21,13 @@ const page = () => {
               <Link  href={"/"} className='text-2xl font-semibold '> BugVaults</Link>
       </div>
       <div className='text-white'>
-        <Badge className='text-lg rounded-lg  px-10 hover:bg-yellow-400 hover:text-black  bg-gray-300/20 text-white from-primary/60 to-primary/40 border-primary/30 hover:border-primary/40 transition-all duration-300 group cursor-default space-x-3 flex gap-4'> 
-        {<FaFireAlt  className='text-yellow-400 hover:text-white'/>}
+        <Badge className='text-lg rounded-lg  px-10 bg-yellow-500 text-black from-primary/60 to-primary/40 border-primary/30 hover:border-primary/40 transition-all duration-300 group cursor-default space-x-3 flex gap-4'> 
+        {<FaFireAlt />}
         Track your Errors & Learn it </Badge>
       </div>
-      <div className='text-white'>
-        <button> Dark </button>
+      <div className='text-gray-900  flex items-center gap-4 pl-4 pr-4'>
+        <button className='p-1 bg-neutral-800 rounded-full px-4'> Dark </button>
+        <button className='p-1 bg-yellow-500 rounded-full px-5 hover:cursor-pointer'> Log out </button>
       </div>
 
     </div>
@@ -34,7 +35,7 @@ const page = () => {
 
     <div className=' h-[44rem] w-[50rem] bg-gray-200/10 border border-gray-600  rounded-lg'>
       <div className=' border-b space-y-2 border-gray-800'>
-        <Badge className=' mx-45 mt-1 mb-1 px-5 text-lg rounded-md bg-gray-300/10 text-white transition-all duration-300 group cursor-default  '> Errors </Badge>
+        <Badge className=' mx-45 mt-1 mb-1 px-5 text-sm rounded-md bg-gray-300/10 text-white transition-all duration-300 group cursor-default  '> Errors </Badge>
       </div>
       <div className='m-5'>
         <div>
@@ -54,11 +55,17 @@ const page = () => {
           <button className="w-full   bg-neutral-200 text-black p-2 rounded hover:cursor-pointer">Save</button>
           </div>
         
-        </div>
+        </div> 
       </div>
     </div>
+    
+
     <div className='bg-gray-200/10   border border-gray-600  rounded-lg flex-col w-full'>
-      <h2> right side</h2>
+      <div className='flex justify-center items-center border-b border-gray-700 pb-1'>
+        <Badge className='px-5 mt-1 text-sm rounded-md bg-gray-300/10 text-white transition-all duration-300 group cursor-default flex items-center justify-center '>
+        {<AiOutlineThunderbolt size={10} className='text-yellow-500 flex items-center justify-center'/>}
+         Errors you have encountered  </Badge>
+      </div>
     </div>
     </div>
   </main>
