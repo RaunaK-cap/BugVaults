@@ -14,48 +14,55 @@ export default function Home() {
       <div
         className="fixed inset-0 z-0 ]"
         style={{
-          backgroundImage: `radial-gradient(circle 500px at 50% 300px, rgba(150,185,30,0.35), transparent)`,
+          backgroundImage: `radial-gradient(circle 500px at 50% 300px, rgba(200,185,10,0.35), transparent)`,
         }}
       />
       <Navbar/>
       <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[20%]  mt-36">
-        <div className="pl-52">
-          <Badge
-            variant="secondary"
-            className="mb-8 bg-gray-200/20 text-white from-primary/60 to-primary/40 border-primary/30 hover:border-primary/40 transition-all duration-300 group cursor-default"
-          >
-            {<IoMdCode size={20} />} By developers, for developers
-          </Badge>
+      <div className="pl-40">
+
+            <div className="pl-52">
+              <Badge
+                variant="secondary"
+                className="mb-8 bg-gray-200/20 text-white from-primary/60 to-primary/40 border-primary/30 hover:border-primary/40 transition-all duration-300 group cursor-default"
+                >
+                {<IoMdCode size={20} />} By developers, for developers
+              </Badge>
+            </div>
+            <h1 className="text-white text-7xl font-bold  pl-24"> Never Lose a </h1>
+            <h1 className="text-white font-bold text-7xl"> Bug Solution Again</h1>
+            <div className="text-gray-400 pl-20 mt-4 ">
+              <p>
+                Your personal vault for debugging sessions. Log, search, and learn
+              </p>
+              <p className="pl-5">
+                from every bug you've conquered. Turn debugging into your
+              </p>
+              <p className="pl-48"> superpower.</p>
+            </div>
+            <div className="pl-62 mt-8">
+              <Badge
+                variant="secondary"
+                className=" bg-gray-200/20 text-white from-primary/60 to-primary/40 border-primary/30 hover:scale-125 transition-all duration-300 group cursor-default flex gap-2"
+                >
+                {<IoMdCode size={20} />} learn from errors
+              </Badge>
+            </div>
+            <div className="pl-20 mt-10 flex gap-5">
+              <button className="p-3 rounded-lg flex  items-center gap-5 px-15 bg-yellow-500 text-black cursor-pointer" onClick={()=> router.push("/trackingpage")}>
+                Start your Vault {<FaArrowRightLong size={10} />}
+              </button>
+              <button className="p-3 rounded-lg flex  items-center gap-4 px-10 bg-black text-white border border-gray-700 cursor-pointer">
+        
+                {<FaGripfire size={20} />} View Demo
+              </button>
+            </div>
         </div>
-        <h1 className="text-white text-7xl font-bold  pl-24"> Never Lose a </h1>
-        <h1 className="text-white font-bold text-7xl"> Bug Solution Again</h1>
-        <div className="text-gray-400 pl-20 mt-4 ">
-          <p>
-            Your personal vault for debugging sessions. Log, search, and learn
-          </p>
-          <p className="pl-5">
-            from every bug you've conquered. Turn debugging into your
-          </p>
-          <p className="pl-48"> superpower.</p>
-        </div>
-        <div className="pl-62 mt-8">
-          <Badge
-            variant="secondary"
-            className=" bg-gray-200/20 text-white from-primary/60 to-primary/40 border-primary/30 hover:scale-125 transition-all duration-300 group cursor-default flex gap-2"
-          >
-            {<IoMdCode size={20} />} learn from errors
-          </Badge>
-        </div>
-        <div className="pl-20 mt-10 flex gap-5">
-          <button className="p-3 rounded-lg flex  items-center gap-5 px-15 bg-yellow-500 text-black cursor-pointer" onClick={()=> router.push("/trackingpage")}>
-            Start your Vault {<FaArrowRightLong size={10} />}
-          </button>
-          <button className="p-3 rounded-lg flex  items-center gap-4 px-10 bg-black text-white border border-gray-700 cursor-pointer">
-    
-            {<FaGripfire size={20} />} View Demo
-          </button>
-        </div>
-        <div className="w-full  mt-16">
+
+
+
+
+        <div className="w-[60rem]  mt-16">
           <div className="">
             <div className="absolute bg-red-400 rounded-2xl  transition-all duration-700" />
             <div className="relative rounded-2xl border border-border/50  p-8  transition-all duration-500 shadow-2xl">
