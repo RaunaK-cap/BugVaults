@@ -4,7 +4,7 @@ import { GrStorage } from "react-icons/gr";
 
 const Navbar = () => {
   return (
-    <div className='h-10 w-full bg-[#020617]/5 fixed top-0 z-50 p-8  flex justify-between items-center backdrop-blur-3xl'>
+    <div className='h-5 w-[80rem] bg-[#020617]/5 fixed top-0 z-50 p-8  ml-30 rounded-lg flex justify-between items-center backdrop-blur-3xl'>
       <div className='flex ml-6 text-white items-center gap-2'>
         {<GrStorage size={40} className='text-yellow-500/80 '/>}
         <h1 className='text-2xl font-semibold '> BugVaults</h1>
